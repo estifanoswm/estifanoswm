@@ -1,37 +1,348 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Estifanos Wondem Meshesha</title>
-    <link rel="icon" href="Images /logo.png" type="image/x-icon" >
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estifanos Wondem Meshesha | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
+
+  <!-- ── NAVBAR ──────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <header class="main-header">
-            <h1>Welcome to Estifanos Wondem Meshesha's Page</h1>
-            <div class="resume-button-wrapper">
-                 <a href = "Images /Resume.pdf" target="_blank" class="resume-link"> Resume</a>
-            </div>
-        </header>
-        
-        <p>To fill out </p>
-
-        <section class="profile-section">
-            <img class="profile-img" src="Images /Estifanos_Wondem_Meshesha.png" alt="Profile Picture"> 
-            <p> <em>Estifanos Wondem Meshesha</em></p>
-        </section>
-
-        <section class="social-links">
-            <a href = "https://www.linkedin.com/in/estifanoswm" target="_blank"><img class="social-icon" src="Images /linkedin.png" alt="LinkedIn Logo"> </a>
-            <a href = "https://github.com/estifanoswm" target="_blank"><img class="social-icon" src="Images /github.png" alt="GitHub Logo"> </a>
-            <a href = "mailto:estifanos.wondem@outlook.com" > <img class="social-icon" src="Images /mail.png" alt="Mail Logo"> </a>
-        </section>
+      <a class="navbar-brand" href="#">EWM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center gap-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-i-work">How I Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#case-studies">Designs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2">
+            <a class="nav-link resume-btn" href="Images/Resume.pdf" target="_blank">Résumé ↗</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="hero-label">Software Engineer · UI Designer</p>
+          <h1>Estifanos<br>Wondem<br><span>Meshesha</span></h1>
+          <p class="hero-desc">
+            3rd-year Software Engineering student at the University of Ottawa.
+            I build things that work beautifully — from full-stack web apps
+            to clean, user-centred interfaces.
+          </p>
+          <div class="social-row mb-4">
+            <a href="https://www.linkedin.com/in/estifanoswm" target="_blank">
+              <img class="social-icon-sm" src="Images/linkedin.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://github.com/estifanoswm" target="_blank">
+              <img class="social-icon-sm" src="Images/github.png" alt="GitHub"> GitHub
+            </a>
+            <a href="mailto:estifanos.wondem@outlook.com">
+              <img class="social-icon-sm" src="Images/mail.png" alt="Email"> Email
+            </a>
+          </div>
+          <a href="#case-studies" class="btn-accent">View My Designs ↓</a>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+          <div class="hero-img-wrap">
+            <img class="hero-img" src="Images/Estifanos_Wondem_Meshesha.png" alt="Estifanos Wondem Meshesha">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label fade-up">About Me</p>
+      <h2 class="section-title fade-up">Who I Am</h2>
+      <div class="divider fade-up"></div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-up">
+          <div class="about-block">
+            <h3>The Spark</h3>
+            <p>My journey didn't start in a classroom — it started at a desk next to my father. Seeing a real-world problem disappear through logic changed my perspective forever.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="about-block">
+            <h3>My Approach</h3>
+            <p>I believe the best software requires empathy. I thrive at the intersection of logical problem-solving and user-centric design, ensuring every tool I build makes a tangible difference.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up">
+          <div class="about-block">
+            <h3>Beyond Code</h3>
+            <p>I'm a trilingual (Amharic, English, French) entrepreneur with a passion for building real products while maintaining a 9.36 CGPA and leading a team at uOttawa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW I WORK ─────────────────────────────── -->
+  <section id="how-i-work">
+    <div class="container">
+      <p class="section-label fade-up">Process</p>
+      <h2 class="section-title fade-up">How I Work</h2>
+      <div class="divider fade-up"></div>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <p class="fade-up" style="color:var(--muted); margin-bottom:2rem;">
+            I am currently enrolled in <strong style="color:var(--text)">SEG3125 – Analysis and Design of User Interfaces</strong> at the University of Ottawa, where I am learning and applying the following design principles in each project:
+          </p>
+          <div class="process-step fade-up">
+            <span class="step-num">01</span>
+            <div class="step-content">
+              <h4>Understand &amp; Research</h4>
+              <p>I start by understanding the users and their needs before touching a single line of code or wireframe. Good design is invisible — it starts with listening.</p>
+            </div>
+          </div>
+          <div class="process-step fade-up">
+            <span class="step-num">02</span>
+            <div class="step-content">
+              <h4>Apply Visual Communication Principles</h4>
+              <p>Drawing from course material (NN/g), I structure layouts using <strong style="color:var(--text)">Scale, Visual Hierarchy, Balance, and Contrast</strong> to guide the user's eye naturally through the interface.</p>
+            </div>
+          </div>
+          <div class="process-step fade-up">
+            <span class="step-num">03</span>
+            <div class="step-content">
+              <h4>Build &amp; Iterate</h4>
+              <p>I prototype using Bootstrap and vanilla JS, deploy on Vercel, and iterate based on real feedback — applying the same iterative process I've learned through both coursework and personal projects.</p>
+            </div>
+          </div>
+          <div class="process-step fade-up">
+            <span class="step-num">04</span>
+            <div class="step-content">
+              <h4>Reflect &amp; Document</h4>
+              <p>Every design decision is intentional and documented — from colour palette rationale to typography choices — so others can understand and build on my work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-up">
+          <div class="about-block" style="height:auto;">
+            <h3 style="margin-bottom:1rem;">Tools &amp; Technologies</h3>
+            <p style="margin-bottom:1.2rem;">My current development toolkit for UI work:</p>
+            <div class="tools-list">
+              <span class="tool-tag">HTML5</span>
+              <span class="tool-tag">CSS3</span>
+              <span class="tool-tag">JavaScript</span>
+              <span class="tool-tag">Bootstrap 5</span>
+              <span class="tool-tag">React 19</span>
+              <span class="tool-tag">Next.js 14</span>
+              <span class="tool-tag">Tailwind CSS</span>
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Vercel</span>
+              <span class="tool-tag">Git &amp; GitHub</span>
+              <span class="tool-tag">Supabase</span>
+              <span class="tool-tag">TypeScript</span>
+            </div>
+            <hr style="border-color:var(--border); margin:1.5rem 0;">
+            <p style="font-size:0.88rem; color:var(--muted);">
+              Useful references I use throughout my design process:
+            </p>
+            <div class="mt-2">
+              <a href="https://www.nngroup.com/" target="_blank" style="color:var(--accent2); font-size:0.88rem; display:block; margin-bottom:0.4rem;">↗ Nielsen Norman Group (NN/g)</a>
+              <a href="https://www.interaction-design.org/" target="_blank" style="color:var(--accent2); font-size:0.88rem; display:block; margin-bottom:0.4rem;">↗ Interaction Design Foundation</a>
+              <a href="https://www.w3schools.com/bootstrap5/" target="_blank" style="color:var(--accent2); font-size:0.88rem; display:block;">↗ Bootstrap 5 Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CASE STUDIES ──────────────────────────── -->
+  <section id="case-studies">
+    <div class="container">
+      <p class="section-label fade-up">SEG3125 Designs</p>
+      <h2 class="section-title fade-up">Case Studies</h2>
+      <div class="divider fade-up"></div>
+      <p class="fade-up mb-5" style="color:var(--muted); max-width:560px;">
+        Four design projects created throughout the semester as part of SEG3125 — Analysis and Design of User Interfaces at the University of Ottawa.
+      </p>
+      <div class="row g-4">
+
+        <!-- Design 1 -->
+        <div class="col-md-6 col-lg-3 fade-up">
+          <div class="case-card">
+            <div class="case-img">🦷</div>
+            <div class="case-body">
+              <span class="case-tag">Design 1 · Service Site</span>
+              <h3>Dental Clinic UI</h3>
+              <p>A clean, accessible service website for a dental clinic — appointment booking, services, and patient info.</p>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 2 -->
+        <div class="col-md-6 col-lg-3 fade-up">
+          <div class="case-card">
+            <div class="case-img">🃏</div>
+            <div class="case-body">
+              <span class="case-tag">Design 2 · Memory Game</span>
+              <h3>Jeu de Mémoire</h3>
+              <p>An interactive bilingual memory card game (EN/FR) designed with game UX principles and accessibility in mind.</p>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 3 -->
+        <div class="col-md-6 col-lg-3 fade-up">
+          <div class="case-card">
+            <div class="case-img">🛍️</div>
+            <div class="case-body">
+              <span class="case-tag">Design 3 · E-Commerce</span>
+              <h3>Online Store</h3>
+              <p>A full e-commerce shopping experience — product catalogue, cart, and checkout flow with strong visual hierarchy.</p>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 4 -->
+        <div class="col-md-6 col-lg-3 fade-up">
+          <div class="case-card">
+            <div class="case-img">📊</div>
+            <div class="case-body">
+              <span class="case-tag">Design 4 · Analytics</span>
+              <h3>Data Dashboard</h3>
+              <p>A business intelligence dashboard with data visualisation, charts, and insights — clean information architecture.</p>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ──────────────────────────── -->
+  <section id="achievements">
+    <div class="container">
+      <p class="section-label fade-up">Recognition</p>
+      <h2 class="section-title fade-up">Achievements</h2>
+      <div class="divider fade-up"></div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="achievement-item fade-up">
+            <img src="Images/2025.png" alt="Dean's Merit Scholarship 2025">
+            <div>
+              <strong>Dean's Merit Scholarship (2025)</strong>
+              <p>Faculty of Engineering, University of Ottawa. Recognized for academic excellence by Dean Dr. Caroline Cao. CGPA: 9.36/10.</p>
+            </div>
+          </div>
+          <div class="achievement-item fade-up">
+            <img src="Images/2024.png" alt="Dean's Merit Scholarship 2024">
+            <div>
+              <strong>Dean's Merit Scholarship (2024)</strong>
+              <p>Faculty of Engineering, University of Ottawa. Recognized for academic excellence by Dean Michel Labrosse.</p>
+            </div>
+          </div>
+          <div class="achievement-item fade-up">
+            <div style="width:56px;height:56px;background:var(--surface);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;">🎓</div>
+            <div>
+              <strong>APUO Student Award ($1,500)</strong>
+              <p>Association of Professors of the University of Ottawa — awarded for demonstrated financial need and academic merit (2025).</p>
+            </div>
+          </div>
+          <div class="achievement-item fade-up">
+            <div style="width:56px;height:56px;background:var(--surface);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;">🏆</div>
+            <div>
+              <strong>Dean's Honor List — 3 consecutive terms</strong>
+              <p>Fall 2024, Winter 2025, Fall 2025 — University of Ottawa Faculty of Engineering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <p class="section-label fade-up">Get In Touch</p>
+          <h2 class="section-title fade-up">Let's Connect</h2>
+          <div class="divider fade-up"></div>
+          <p class="fade-up" style="color:var(--muted); margin-bottom:1.5rem;">
+            Whether it's a co-op opportunity, a project idea, or just to say hello — I'd love to hear from you.
+          </p>
+          <div class="fade-up">
+            <a href="https://linktr.ee/estifanoswm" target="_blank" style="color:var(--accent2); font-size:0.9rem;">↗ Connect on Linktree</a>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 fade-up">
+          <form class="contact-form" action="https://formspree.io/f/mjgbzwkg" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+            <button type="submit" class="btn-accent">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Estifanos Wondem Meshesha &nbsp;·&nbsp; Built with Bootstrap 5 &nbsp;·&nbsp; Hosted on Vercel</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll fade-in observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Active nav link highlight
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+      });
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
+      });
+    });
+  </script>
 </body>
-    
-
-
-
 </html>
